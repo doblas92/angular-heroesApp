@@ -31,7 +31,9 @@
 
     <span class="spacer"></span>
 
-    <button mat-button>
+    <span *ngIf="user" >{{ user.email }}</span>
+
+    <button mat-button (click)="onLogout()">
       Logout
     </button>
 
@@ -42,7 +44,4 @@
   </div>
 
 </mat-sidenav-container>
-
-
-
 
